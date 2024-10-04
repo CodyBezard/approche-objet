@@ -5,10 +5,20 @@ public class AdressePostale {
     String libelleRue;
     int codePostal;
     String ville;
-    AdressePostale(int newNumRue, String newLibRue, int newCodePost, String newVille){
+    public AdressePostale(int newNumRue, String newLibRue, int newCodePost, String newVille){
         numeroRue = newNumRue;
         libelleRue = newLibRue;
         codePostal = newCodePost;
         ville = newVille;
     }
+
+    @Override
+    public String toString() {
+        return "AdressePostale{" +
+                "numeroRue=" + numeroRue +
+                ", libelleRue='" + libelleRue + '\'' +
+                ", codePostal=" + codePostal +
+                ", ville='" + ville + '\'' +
+                '}';
     }
+}

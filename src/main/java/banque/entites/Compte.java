@@ -1,12 +1,17 @@
 package banque.entites;
 
 public class Compte {
-    private int numeroCompte;
-    private int soldeCompte;
+    protected int numeroCompte;
+    protected int soldeCompte;
 
     public Compte (int numero, int solde){
         this.numeroCompte=numero;
         this.soldeCompte = solde;
+    }
+
+    @Override
+    public String toString(){
+        return numeroCompte+" "+soldeCompte;
     }
 
     public int getNumeroCompte() {
@@ -24,4 +29,5 @@ public class Compte {
     public void setSoldeCompte(int soldeCompte) {
         this.soldeCompte = soldeCompte;
     }
+
 }

@@ -10,10 +10,10 @@ public class TestOperation {
         double montantGlobal =0d;
         for (int i=0; i<tabOperation.length;i++) {
             System.out.println(tabOperation[i].toString()+ " " +tabOperation[i].getType() );
-            if(tabOperation[i].getType() == "CREDIT" ){
-                montantGlobal = montantGlobal + tabOperation[i].montantOperation;
-            } else if (tabOperation[i].getType() == "DEBIT" ) {
-                montantGlobal = montantGlobal - tabOperation[i].montantOperation;
+            if(tabOperation[i].getType().equals("CREDIT") ){
+                montantGlobal = montantGlobal + tabOperation[i].getMontant();
+            } else if (tabOperation[i].getType().equals("DEBIT") ) {
+                montantGlobal = montantGlobal - tabOperation[i].getMontant();
             }
         }
         System.out.println("Le montant total des opérations est de "+ montantGlobal);

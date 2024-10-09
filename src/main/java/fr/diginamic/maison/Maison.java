@@ -11,8 +11,8 @@ public class Maison {
         }
         maison=maisonTampon;
     }
-    public int superficieTotal(Piece[] maison){
-
-    }
+//    public int superficieTotal(Piece[] maison){
+//
+//    }
 
 }

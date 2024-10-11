@@ -4,4 +4,7 @@ public class Salon extends Piece{
     public Salon(double surface, int etage) {
         super(surface, etage);
     }
+    public String getName(){
+        return "Salon";
+    }
 }

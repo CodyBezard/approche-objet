@@ -7,4 +7,16 @@ public abstract class Piece {
         this.superficie=surface;
         this.etage=etage;
     }
+
+    public double getSuperficie() {
+        return superficie;
+    }
+
+    public int getEtage() {
+        return etage;
+    }
+
+    public String getName(){
+        return "Piece";
+    }
 }

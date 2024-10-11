@@ -4,4 +4,7 @@ public class WC extends Piece{
     public WC(double surface, int etage) {
         super(surface, etage);
     }
+    public String getName(){
+        return "WC";
+    }
 }

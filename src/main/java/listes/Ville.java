@@ -10,9 +10,14 @@ public class Ville {
 
     @Override
     public String toString() {
-        return "Ville{" +
-                "nom='" + nom + '\'' +
-                ", nbHabitant=" + nbHabitant +
-                '}';
+        return nom + " " +nbHabitant;
+    }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public int getNbHabitant() {
+        return nbHabitant;
     }
 }

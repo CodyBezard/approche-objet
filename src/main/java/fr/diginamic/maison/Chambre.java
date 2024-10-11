@@ -4,4 +4,7 @@ public class Chambre extends Piece{
     public Chambre(double surface, int etage) {
         super(surface, etage);
     }
+    public String getName(){
+        return "Chambre";
+    }
 }
